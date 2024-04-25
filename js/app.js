@@ -4,20 +4,45 @@ Vue.createApp({
         prevTask: [
           {
             text: "Formaggio",
-            isDone: false,
-            stateImage: "./img/done.svg",
+            isDone: false
           },
           {
             text: "Buttare vetro",
-            isDone: false,
-            stateImage: "./img/done.svg",
+            isDone: false
           },
           {
             text: "Lavare il cane",
-            isDone: false,
-            stateImage: "./img/done.svg",
+            isDone: false
           },
         ],
+        todayTask: [
+            {
+              text: "Formaggio",
+              isDone: false,
+            },
+            {
+              text: "Buttare vetro",
+              isDone: false,
+            },
+            {
+              text: "Lavare il cane",
+              isDone: false,
+            },
+          ],
+          futureTask: [
+            {
+              text: "Formaggio",
+              isDone: false,
+            },
+            {
+              text: "Buttare vetro",
+              isDone: false,
+            },
+            {
+              text: "Lavare il cane",
+              isDone: false,
+            },
+          ],
         newTaskText: '' // Aggiunto per gestire il testo della nuova attività
       };
     },
@@ -30,7 +55,6 @@ Vue.createApp({
               this.prevTask.push({
                   text: this.newTaskText,
                   isDone: false,
-                  stateImage: "./img/done.svg",
               });
               this.newTaskText = ''; // Resetta il campo di input dopo l'aggiunta della nuova attività
           }

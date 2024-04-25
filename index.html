@@ -38,7 +38,23 @@
                     <li class="spacing" >&#10148; <strong>TASK PRECEDENTI</strong>
                         <ul>
                             <li class="taskbox roundedbrdr greytext" v-for="(task, index) in prevTask" :key="index">
-                                <span class="check" @click="toggleTask(index, 'prevTask')">{{ task.isDone ? '✔' : '❌' }}</span>
+                                <span class="check" @click="toggleTask(index, 'prevTask')">{{ task.isDone ? '&check;' : '&cross;' }}</span>
+                                <span class="done" :class="{ 'completed': task.isDone }">{{ task.text }}</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="spacing" >&#10148; <strong>TASK OGGI</strong>
+                        <ul>
+                            <li class="taskbox roundedbrdr greytext" v-for="(task, index) in todayTask" :key="index">
+                                <span class="check" @click="toggleTask(index, 'prevTask')">{{ task.isDone ? '&check;' : '&cross;' }}</span>
+                                <span class="done" :class="{ 'completed': task.isDone }">{{ task.text }}</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="spacing" >&#10148; <strong>TASK FUTURE</strong>
+                        <ul>
+                            <li class="taskbox roundedbrdr greytext" v-for="(task, index) in futureTask" :key="index">
+                                <span class="check" @click="toggleTask(index, 'prevTask')">{{ task.isDone ? '&check;' : '&cross;' }}</span>
                                 <span class="done" :class="{ 'completed': task.isDone }">{{ task.text }}</span>
                             </li>
                         </ul>
