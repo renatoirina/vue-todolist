@@ -1,0 +1,192 @@
+/* PROVA COLLEGAMENTO CSS TO HTML */
+/*
+body {
+    background-color: aqua;
+}
+*/
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+.top-bar {
+    background-color: #edf2f7;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+}
+
+.top-bar .logo {
+    margin: auto;
+}
+
+/* MAIN < ADD TASKS CONTAINER */
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #edf2f7;
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+    border-radius: 5px;
+    width: 60%;
+    margin: 40px auto 5px;
+}
+
+.input-container input {
+    flex-grow: 1;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-left: 30%;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+}
+
+.input-container .add-task {
+    background-color: #09a9ed;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 30%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* MAIN < TASKS CONTAINER */
+.tasks-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #edf2f7;
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
+    border-radius: 5px;
+    width: 60%;
+    margin: auto;
+}
+
+.tasks-container .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none
+}
+
+.tasks-container .task .task-title {
+    flex-grow: 1;
+    font-size: 16px;
+}
+
+.tasks-container .task .task-tag {
+    background-color: #09a9ed;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+/*  COMPLETED AND UNCOMPLETED TASK  */
+.check {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+    font-size: 10px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.completed {
+    color: rgb(46 198 171);
+    border: 1px solid rgb(46 198 171);
+}
+
+.uncompleted {
+    color: red;
+    border: 1px solid red;
+}
+
+/* ELEMENTS BORDERS */
+.roundedbrdr{
+    border-radius: 5px;  
+}
+
+/* TAG STYLE */
+.tag{
+    border-radius: 25px;
+    padding: 5px 10px;
+    font-size: 13px;
+}
+
+/* TAG COLORS */
+.editorial {
+    background-color: #09a9ed;
+}
+
+.mobile {
+    background-color: #ff9b00;
+}
+
+.q1-goals {
+    background-color: #ab5de6;
+}
+
+.recruiting {
+    background-color: #2cc6ab;
+}
+
+.sales {
+    background-color:#a3d116;
+}
+
+.website {
+    background-color: #ec4a9d;
+}
+
+/* TEXTS AND STYLES */
+
+.whitetext {
+    color: white;
+}
+.greytext {
+    color: grey;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+/* LIST STYLE */
+ul {
+    list-style: none;
+    text-align: left;
+}
+
+
+/* BOX AND SPACING */
+.taskbox {
+    background-color: white;
+    line-height: 35px;
+    padding: 0 20px;
+    margin: 10px 0px;
+    box-shadow: 0px 10px 20px -5px lightgray;
+}
+
+.spacing {
+    padding-bottom: 30px;
+}
